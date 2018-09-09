@@ -1,0 +1,52 @@
+@import "../common/var";
+
+.header {
+  margin: 44px 138px;
+  margin-bottom: 0;
+
+  .nav {
+    display: flex;
+    align-items: center;
+
+    .logo {
+      font-size: 20px;
+      color: $logo-color;
+    }
+
+    .menu {
+      display: flex;
+      margin-left: auto;
+      font-size: 16px;
+      color: $menu-color;
+
+      li {
+        padding: 0 13px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .introduction {
+    margin-top: 268px;
+    width: 512px;
+
+    .introduction-title {
+      font-family: HelveticaNeue-Bold;
+      font-size: 50px;
+      color: $title-color;
+    }
+
+    .introduction-subtitle {
+      margin-top: 12px;
+      font-family: Lato-Light;
+      font-size: 38px;
+      color: $title-color;
+    }
+
+    .introduction-text {
+      margin-top: 16px;
+      font-size: 16px;
+      color: $text-color;
+    }
+  }
+}

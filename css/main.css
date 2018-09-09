@@ -1,0 +1,86 @@
+.header {
+  margin: 44px 138px;
+  margin-bottom: 0;
+}
+
+.header .nav {
+  display: flex;
+  align-items: center;
+}
+
+.header .nav .logo {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.header .nav .menu {
+  display: flex;
+  margin-left: auto;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.header .nav .menu li {
+  padding: 0 13px;
+  cursor: pointer;
+}
+
+.header .introduction {
+  margin-top: 268px;
+  width: 512px;
+}
+
+.header .introduction .introduction-title {
+  font-family: HelveticaNeue-Bold;
+  font-size: 50px;
+  color: #ffffff;
+}
+
+.header .introduction .introduction-subtitle {
+  margin-top: 12px;
+  font-family: Lato-Light;
+  font-size: 38px;
+  color: #ffffff;
+}
+
+.header .introduction .introduction-text {
+  margin-top: 16px;
+  font-size: 16px;
+  color: #808080;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+
+html, body, button, ul, li, h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: hidden;
+}
+
+button, input {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+ul, li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html {
+  background-color: #000000;
+}
+
+/*# sourceMappingURL=main.css.map */
