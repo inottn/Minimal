@@ -1,10 +1,10 @@
 @import "./common/var";
 @import "./common/function";
 @import "./layouts/header";
+@import "./layouts/inspiration";
 
 * {
   box-sizing: border-box;
-  font-family: Poppins;
 }
 
 html, body, button, ul, li, h1, h2, h3, h4, h5, h6, p {
@@ -33,5 +33,7 @@ a {
 }
 
 html {
+  margin-left: 142px;
+  margin-right: 127px;
   background-color: #000000;
 }

@@ -1,6 +1,5 @@
 .header {
-  margin: 44px 138px;
-  margin-bottom: 0;
+  margin-top: 44px;
 }
 
 .header .nav {
@@ -49,9 +48,72 @@
   color: #808080;
 }
 
+.inspiration {
+  margin-top: 328px;
+}
+
+.inspiration .inspiration-title {
+  font-family: HelveticaNeue-Bold;
+  font-size: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.inspiration .inspiration-text {
+  margin: 24px auto;
+  margin-bottom: 0;
+  width: 600px;
+  font-family: OpenSans;
+  font-size: 18px;
+  color: #808080;
+  text-align: center;
+}
+
+.inspiration .inspiration-images {
+  display: grid;
+  grid-template-columns: 324fr 12fr 68fr 12fr 324fr 12fr 404fr;
+  grid-template-rows: auto 12px repeat(3, auto);
+  margin-top: 112px;
+}
+
+.inspiration .inspiration-images .inspiration-image {
+  font-size: 0;
+}
+
+.inspiration .inspiration-images .inspiration-image img {
+  max-width: 100%;
+  width: 100%;
+}
+
+.inspiration .inspiration-images .inspiration-image-1 {
+  grid-column: 1 / span 3;
+}
+
+.inspiration .inspiration-images .inspiration-image-2 {
+  grid-column: 5 / span 3;
+}
+
+.inspiration .inspiration-images .inspiration-image-3 {
+  grid-row: 3 / span 3;
+}
+
+.inspiration .inspiration-images .inspiration-image-4 {
+  grid-column: 3 / span 3;
+  grid-row: 3;
+}
+
+.inspiration .inspiration-images .inspiration-image-5 {
+  grid-column: 7;
+  grid-row: 3;
+}
+
+.inspiration .inspiration-images .inspiration-image-6 {
+  grid-column: 3 / span 5;
+  grid-row: 5;
+}
+
 * {
   box-sizing: border-box;
-  font-family: Poppins;
 }
 
 html, body, button, ul, li, h1, h2, h3, h4, h5, h6, p {
@@ -80,6 +142,8 @@ a {
 }
 
 html {
+  margin-left: 142px;
+  margin-right: 127px;
   background-color: #000000;
 }
 
