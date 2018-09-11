@@ -1,0 +1,62 @@
+@import "../common/var";
+
+.blog {
+  margin-top: 228px;
+
+  .blog-title {
+    font-family: HelveticaNeue-Bold;
+    font-size: $title-font-size;
+    color: $title-color;
+    text-align: center;
+  }
+
+  .blog-text {
+    margin: 24px auto;
+    margin-bottom: 0;
+    width: 396px;
+    font-family: OpenSans;
+    font-size: $text-font-size;
+    color: $text-color;
+    text-align: center;
+  }
+
+  .blog-articles {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 108px;
+
+    .blog-article {
+      width: calc(33.3% - 24px);
+
+      .blog-article-image {
+        max-width: 100%;
+        width: 100%;
+      }
+
+      .blog-article-title {
+        margin: 24px 16px;
+        margin-bottom: 0;
+        font-family: HelveticaNeue-Bold;
+        font-size: 20px;
+        color: $title-color;
+      }
+  
+      .blog-article-text {
+        margin: 24px 16px;
+        margin-bottom: 0;
+        font-family: OpenSans;
+        font-size: 16px;
+        color: $text-color;
+      }
+
+      .blog-article-time {
+        display: inline-block;
+        margin-top: 42px;
+        margin-left: 16px;
+        font-family: OpenSans-Light;
+        font-size: 16px;
+        color: $text-color;
+      }
+    }
+  }
+}
