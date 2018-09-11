@@ -5,7 +5,7 @@
 
   .inspiration-title {
     font-family: HelveticaNeue-Bold;
-    font-size: 28px;
+    font-size: $title-font-size;
     color: $title-color;
     text-align: center;
   }
@@ -15,7 +15,7 @@
     margin-bottom: 0;
     width: 600px;
     font-family: OpenSans;
-    font-size: 18px;
+    font-size: $text-font-size;
     color: $text-color;
     text-align: center;
   }

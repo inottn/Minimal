@@ -1,0 +1,22 @@
+@import "../common/var";
+
+.about {
+  margin-top: 228px;
+
+  .about-title {
+    font-family: HelveticaNeue-Bold;
+    font-size: $title-font-size;
+    color: $title-color;
+    text-align: center;
+  }
+
+  .about-text {
+    margin: 24px auto;
+    margin-bottom: 0;
+    width: 960px;
+    font-family: OpenSans;
+    font-size: $text-font-size;
+    color: $text-color;
+    text-align: center;
+  }
+}
