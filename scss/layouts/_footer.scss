@@ -1,0 +1,43 @@
+@import "../common/var";
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 180px;
+  margin-bottom: 54px;
+
+  .footer-form-wrapper {
+    .form-text {
+      margin-bottom: 24px;
+      font-family: HelveticaNeue-Medium;
+      font-size: 16px;
+      color: #ffffff;
+    }
+
+    .form-input {
+      vertical-align: top;
+      padding-left: 16px;
+      width: 350px;
+      height: 48px;
+      background-color: #ffffff;
+      font-family: HelveticaNeue;
+      font-size: 15px;
+    }
+  
+    .form-btn {
+      width: 60px;
+      height: 48px;
+      background-color: #ffffff;
+      font-family: HelveticaNeue-Medium;
+      font-size: 15px;
+    }
+  }
+
+  .footer-copyright {
+    margin-bottom: 18px;
+    font-family: HelveticaNeue-Light;
+    font-size: 15px;
+    color: #ffffff;
+  }
+}
