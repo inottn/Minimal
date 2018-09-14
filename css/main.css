@@ -264,9 +264,13 @@ a {
 }
 
 html {
-  margin-left: 142px;
-  margin-right: 127px;
+  padding-left: 142px;
+  padding-right: 127px;
   background-color: #000000;
+  background-image: url("../images/background-01.png"), url("../images/background-02.png"), url("../images/background-03.png");
+  background-position: right 39.16667vw, left 145.83333vw, right bottom;
+  background-size: 38.54167vw 47.98611vw, 21.38889vw 44.02778vw, 24.02778vw 34.02778vw;
+  background-repeat: no-repeat;
 }
 
 /*# sourceMappingURL=main.css.map */

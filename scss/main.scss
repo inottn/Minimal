@@ -36,7 +36,11 @@ a {
 }
 
 html {
-  margin-left: 142px;
-  margin-right: 127px;
+  padding-left: 142px;
+  padding-right: 127px;
   background-color: #000000;
+  background-image: url("../images/background-01.png"), url("../images/background-02.png"), url("../images/background-03.png");
+  background-position: right responsive(564), left responsive(2100), right bottom;
+  background-size: responsive(555) responsive(691), responsive(308) responsive(634), responsive(346) responsive(490);
+  background-repeat: no-repeat;
 }
