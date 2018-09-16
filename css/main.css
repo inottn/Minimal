@@ -62,7 +62,7 @@
 .inspiration .inspiration-text {
   margin: 24px auto;
   margin-bottom: 0;
-  width: 600px;
+  max-width: 600px;
   font-family: OpenSans;
   font-size: 16px;
   color: #808080;
@@ -126,7 +126,7 @@
 .about .about-text {
   margin: 24px auto;
   margin-bottom: 0;
-  width: 960px;
+  max-width: 960px;
   font-family: OpenSans;
   font-size: 16px;
   color: #808080;
@@ -147,7 +147,7 @@
 .blog .blog-text {
   margin: 24px auto;
   margin-bottom: 0;
-  width: 396px;
+  max-width: 396px;
   font-family: OpenSans;
   font-size: 16px;
   color: #808080;
