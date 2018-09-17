@@ -1,21 +1,19 @@
-@import "../common/var";
-
 .inspiration {
-  margin-top: 328px;
+  margin-top: responsive(328);
 
   .inspiration-title {
     font-family: HelveticaNeue-Bold;
-    font-size: $title-font-size;
+    font-size: responsive($title-font-size);
     color: $title-color;
     text-align: center;
   }
 
   .inspiration-text {
-    margin: 24px auto;
+    margin: responsive(24) auto;
     margin-bottom: 0;
-    max-width: 600px;
+    max-width: responsive(600);
     font-family: OpenSans;
-    font-size: $text-font-size;
+    font-size: responsive($text-font-size);
     color: $text-color;
     text-align: center;
   }
@@ -23,8 +21,8 @@
   .inspiration-images {
     display: grid;
     grid-template-columns: 324fr 12fr 68fr 12fr 324fr 12fr 404fr;
-    grid-template-rows: auto 12px repeat(3, auto);
-    margin-top: 112px;
+    grid-template-rows: auto responsive(12) repeat(3, auto);
+    margin-top: responsive(112);
 
     .inspiration-image {
       font-size: 0;

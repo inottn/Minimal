@@ -1,32 +1,31 @@
-@import "../common/var";
-
 .blog {
-  margin-top: 228px;
+  margin-top: responsive(228);
 
   .blog-title {
     font-family: HelveticaNeue-Bold;
-    font-size: $title-font-size;
+    font-size: responsive($title-font-size);
     color: $title-color;
     text-align: center;
   }
 
   .blog-text {
-    margin: 24px auto;
+    margin: responsive(24) auto;
     margin-bottom: 0;
-    max-width: 396px;
+    max-width: responsive(396);
     font-family: OpenSans;
-    font-size: $text-font-size;
+    font-size: responsive($text-font-size);
     color: $text-color;
     text-align: center;
   }
 
   .blog-articles {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 108px;
+    margin-top: responsive(108);
 
     .blog-article {
-      width: calc(33.3% - 24px);
+      width: calc(33.3% - #{responsive(24)});
 
       .blog-article-image {
         max-width: 100%;
@@ -34,27 +33,27 @@
       }
 
       .blog-article-title {
-        margin: 24px 16px;
+        margin: responsive(24) responsive(16);
         margin-bottom: 0;
         font-family: HelveticaNeue-Bold;
-        font-size: 20px;
+        font-size: responsive(20);
         color: $title-color;
       }
   
       .blog-article-text {
-        margin: 24px 16px;
+        margin: responsive(24) responsive(16);
         margin-bottom: 0;
         font-family: OpenSans;
-        font-size: 16px;
+        font-size: responsive(16);
         color: $text-color;
       }
 
       .blog-article-time {
         display: inline-block;
-        margin-top: 42px;
-        margin-left: 16px;
+        margin-top: responsive(42);
+        margin-left: responsive(16);
         font-family: OpenSans-Light;
-        font-size: 16px;
+        font-size: responsive(16);
         color: $text-color;
       }
     }

@@ -1,50 +1,51 @@
-@import "../common/var";
-
 .header {
-  margin-top: 44px;
+  margin-top: responsive(44);
 
   .nav {
     display: flex;
     align-items: center;
 
     .logo {
-      font-size: 20px;
+      font-size: responsive(20);
       color: $logo-color;
     }
 
     .menu {
       display: flex;
       margin-left: auto;
-      font-size: 16px;
+      font-size: responsive(16);
       color: $menu-color;
 
       li {
-        padding: 0 13px;
+        padding: 0 responsive(13);
         cursor: pointer;
       }
     }
   }
 
   .introduction {
-    margin-top: 268px;
-    width: 512px;
+    margin-top: responsive(268);
+    max-width: responsive(512);
 
     .introduction-title {
       font-family: HelveticaNeue-Bold;
-      font-size: 50px;
+      // font-size: 3.125rem;
+      font-size: responsive(50);
       color: $title-color;
     }
 
     .introduction-subtitle {
-      margin-top: 12px;
+      margin-top: responsive(12);
       font-family: Lato-Light;
-      font-size: 38px;
+      // font-size: 2.375rem;
+      font-size: responsive(38);
       color: $title-color;
     }
 
     .introduction-text {
-      margin-top: 16px;
-      font-size: 16px;
+      margin-top: responsive(16);
+      // font-size: 1rem;
+      font-size: responsive(16);
       color: $text-color;
     }
   }

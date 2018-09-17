@@ -44,6 +44,6 @@ html {
 }
 
 body {
-  margin-left: 142px;
-  margin-right: 127px;
+  margin-left: responsive(142);
+  margin-right: responsive(127);
 }

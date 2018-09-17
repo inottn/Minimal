@@ -1,21 +1,19 @@
-@import "../common/var";
-
 .about {
-  margin-top: 228px;
+  margin-top: responsive(228);
 
   .about-title {
     font-family: HelveticaNeue-Bold;
-    font-size: $title-font-size;
+    font-size: responsive($title-font-size);
     color: $title-color;
     text-align: center;
   }
 
   .about-text {
-    margin: 24px auto;
+    margin: responsive(24) auto;
     margin-bottom: 0;
-    max-width: 960px;
+    max-width: responsive(960);
     font-family: OpenSans;
-    font-size: $text-font-size;
+    font-size: responsive($text-font-size);
     color: $text-color;
     text-align: center;
   }

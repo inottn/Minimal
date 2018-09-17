@@ -1,43 +1,41 @@
-@import "../common/var";
-
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: 180px;
-  margin-bottom: 54px;
+  margin-top: responsive(180);
+  margin-bottom: responsive(54);
 
   .footer-form-wrapper {
     .form-text {
-      margin-bottom: 24px;
+      margin-bottom: responsive(24);
       font-family: HelveticaNeue-Medium;
-      font-size: 16px;
+      font-size: responsive(18);
       color: #ffffff;
     }
 
     .form-input {
       vertical-align: top;
-      padding-left: 16px;
-      width: 350px;
-      height: 48px;
+      padding-left: responsive(16);
+      width: responsive(350);
+      height: responsive(48);
       background-color: #ffffff;
       font-family: HelveticaNeue;
-      font-size: 15px;
+      font-size: responsive(16);
     }
   
     .form-btn {
-      width: 60px;
-      height: 48px;
+      width: responsive(60);
+      height: responsive(48);
       background-color: #ffffff;
       font-family: HelveticaNeue-Medium;
-      font-size: 15px;
+      font-size: responsive(16);
     }
   }
 
   .footer-copyright {
-    margin-bottom: 18px;
+    margin-bottom: responsive(18);
     font-family: HelveticaNeue-Light;
-    font-size: 15px;
+    font-size: responsive(16);
     color: #ffffff;
   }
 }
