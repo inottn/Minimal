@@ -1,31 +1,58 @@
 .blog {
-  margin-top: responsive(228);
+  margin-top: px2vw(228);
+
+  @media screen and (max-width: 992px) {
+    margin-top: px2rem(228);
+  }
 
   .blog-title {
     font-family: HelveticaNeue-Bold;
-    font-size: responsive($title-font-size);
+    font-size: px2vw($title-font-size);
     color: $title-color;
     text-align: center;
+
+    @media screen and (max-width: 992px) {
+      font-size: $title-font-size / 16px + rem;
+    }
   }
 
   .blog-text {
-    margin: responsive(24) auto;
+    margin: px2vw(24) auto;
     margin-bottom: 0;
-    max-width: responsive(396);
+    max-width: px2vw(396);
     font-family: OpenSans;
-    font-size: responsive($text-font-size);
+    font-size: px2vw($text-font-size);
     color: $text-color;
     text-align: center;
+
+    @media screen and (max-width: 992px) {
+      margin: px2rem(24) auto;
+      max-width: 80%;
+      font-size: $text-font-size / 16px + rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
 
   .blog-articles {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: responsive(108);
+    margin-top: px2vw(108);
+
+    @media screen and (max-width: 992px) {
+      margin-top: px2rem(108);
+    }
 
     .blog-article {
-      width: calc(33.3% - #{responsive(24)});
+      width: calc(33.3% - #{px2vw(24)});
+
+      @media screen and (max-width: 576px) {
+        margin: 0 auto;
+        width: 80%;
+      }
 
       .blog-article-image {
         max-width: 100%;
@@ -33,28 +60,49 @@
       }
 
       .blog-article-title {
-        margin: responsive(24) responsive(16);
+        margin: px2vw(24) px2vw(16);
         margin-bottom: 0;
         font-family: HelveticaNeue-Bold;
-        font-size: responsive(20);
+        font-size: px2vw(20);
         color: $title-color;
+
+        @media screen and (max-width: 992px) {
+          margin: px2rem(24) 0;
+          font-size: px2rem(16);
+        }
+
+        @media screen and (max-width: 576px) {
+          font-size: px2rem(20);
+        }
       }
   
       .blog-article-text {
-        margin: responsive(24) responsive(16);
+        margin: px2vw(24) px2vw(16);
         margin-bottom: 0;
         font-family: OpenSans;
-        font-size: responsive(16);
+        font-size: px2vw(16);
         color: $text-color;
+
+        @media screen and (max-width: 992px) {
+          margin: px2rem(24) 0;
+          font-size: px2rem(16);
+        }
       }
 
       .blog-article-time {
         display: inline-block;
-        margin-top: responsive(42);
-        margin-left: responsive(16);
+        margin-top: px2vw(42);
+        margin-left: px2vw(16);
         font-family: OpenSans-Light;
-        font-size: responsive(16);
+        font-size: px2vw(16);
         color: $text-color;
+
+        @media screen and (max-width: 992px) {
+          margin-top: px2rem(42);
+          margin-bottom: px2rem(42);
+          margin-left: 0;
+          font-size: px2rem(16);
+        }
       }
     }
   }

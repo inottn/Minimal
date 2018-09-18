@@ -1,28 +1,47 @@
 .inspiration {
-  margin-top: responsive(328);
+  margin-top: px2vw(328);
 
   .inspiration-title {
     font-family: HelveticaNeue-Bold;
-    font-size: responsive($title-font-size);
+    font-size: px2vw($title-font-size);
     color: $title-color;
     text-align: center;
+
+    @media screen and (max-width: 992px) {
+      margin-top: px2rem(328);
+      font-size: $title-font-size / 16px + rem;
+    }
   }
 
   .inspiration-text {
-    margin: responsive(24) auto;
+    margin: px2vw(24) auto;
     margin-bottom: 0;
-    max-width: responsive(600);
+    max-width: px2vw(600);
     font-family: OpenSans;
-    font-size: responsive($text-font-size);
+    font-size: px2vw($text-font-size);
     color: $text-color;
     text-align: center;
+
+    @media screen and (max-width: 992px) {  
+      margin: px2rem(24) auto;
+      max-width: 80%;
+      font-size: $text-font-size / 16px + rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 100%;
+    }
   }
   
   .inspiration-images {
     display: grid;
     grid-template-columns: 324fr 12fr 68fr 12fr 324fr 12fr 404fr;
-    grid-template-rows: auto responsive(12) repeat(3, auto);
-    margin-top: responsive(112);
+    grid-template-rows: auto px2vw(12) repeat(3, auto);
+    margin-top: px2vw(112);
+
+    @media screen and (max-width: 992px) {  
+      margin-top: px2rem(112);
+    }
 
     .inspiration-image {
       font-size: 0;

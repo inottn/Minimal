@@ -38,12 +38,29 @@ a {
 html {
   background-color: #000000;
   background-image: url("../images/background-01.png"), url("../images/background-02.png"), url("../images/background-03.png");
-  background-position: right responsive(564), left responsive(2100), right bottom;
-  background-size: responsive(555) responsive(691), responsive(308) responsive(634), responsive(346) responsive(490);
+  background-position: right px2vw(564), left px2vw(2100), right bottom;
+  background-size: px2vw(555) px2vw(691), px2vw(308) px2vw(634), px2vw(346) px2vw(490);
   background-repeat: no-repeat;
+
+  @media screen and (max-width: 992px) {
+    font-size: 14px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+
+  @media screen and (max-width: 576px) {
+    font-size: 10px;
+  }
 }
 
 body {
-  margin-left: responsive(142);
-  margin-right: responsive(127);
+  margin-left: px2vw(142);
+  margin-right: px2vw(127);
+
+  @media screen and (max-width: 576px) {
+    margin-left: px2vw(100);
+    margin-right: px2vw(100);
+  }
 }

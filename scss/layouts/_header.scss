@@ -1,52 +1,84 @@
 .header {
-  margin-top: responsive(44);
+  margin-top: px2vw(44);
+
+  @media screen and (max-width: 992px) {
+    margin-top: px2rem(44);
+  }
 
   .nav {
     display: flex;
     align-items: center;
 
     .logo {
-      font-size: responsive(20);
+      font-size: px2vw(20);
       color: $logo-color;
+
+      @media screen and (max-width: 992px) {
+        font-size: px2rem(20);
+      }
     }
 
     .menu {
       display: flex;
       margin-left: auto;
-      font-size: responsive(16);
+      font-size: px2vw(16);
       color: $menu-color;
 
+      @media screen and (max-width: 992px) {
+        font-size: px2rem(16);
+      }
+
       li {
-        padding: 0 responsive(13);
+        padding: 0 px2vw(13);
         cursor: pointer;
       }
     }
   }
 
   .introduction {
-    margin-top: responsive(268);
-    max-width: responsive(512);
+    margin-top: px2vw(268);
+    max-width: px2vw(512);
+
+    @media screen and (max-width: 992px) {
+      margin-top: px2rem(268);
+      max-width: 100%;
+    }
 
     .introduction-title {
       font-family: HelveticaNeue-Bold;
-      // font-size: 3.125rem;
-      font-size: responsive(50);
+      font-size: px2vw(50);
       color: $title-color;
+
+      @media screen and (max-width: 992px) {
+        font-size: px2rem(50);
+      }
     }
 
     .introduction-subtitle {
-      margin-top: responsive(12);
+      margin-top: px2vw(12);
       font-family: Lato-Light;
-      // font-size: 2.375rem;
-      font-size: responsive(38);
+      font-size: px2vw(38);
       color: $title-color;
+
+      @media screen and (max-width: 992px) {
+        margin-top: px2rem(12);
+        font-size: px2rem(38);
+      }
+
+      @media screen and (max-width: 576px) {
+        font-size: px2rem(34);
+      }
     }
 
     .introduction-text {
-      margin-top: responsive(16);
-      // font-size: 1rem;
-      font-size: responsive(16);
+      margin-top: px2vw(16);
+      font-size: px2vw(16);
       color: $text-color;
+
+      @media screen and (max-width: 992px) {
+        margin-top: px2rem(16);
+        font-size: px2rem(16);
+      }
     }
   }
 }

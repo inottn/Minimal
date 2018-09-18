@@ -2,40 +2,75 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  margin-top: responsive(180);
-  margin-bottom: responsive(54);
+  margin-top: px2vw(180);
+  margin-bottom: px2vw(54);
+
+  @media screen and (max-width: 992px) {
+    margin-top: px2rem(180);
+    margin-bottom: px2rem(54);
+  }
+
+  @media screen and (max-width: 576px) {
+    flex-direction: column;
+    align-items: center;
+  }
 
   .footer-form-wrapper {
     .form-text {
-      margin-bottom: responsive(24);
+      margin-bottom: px2vw(24);
       font-family: HelveticaNeue-Medium;
-      font-size: responsive(18);
+      font-size: px2vw(18);
       color: #ffffff;
+
+      @media screen and (max-width: 992px) {
+        font-size: px2rem(16);
+      }
     }
 
     .form-input {
       vertical-align: top;
-      padding-left: responsive(16);
-      width: responsive(350);
-      height: responsive(48);
+      padding-left: px2vw(16);
+      width: px2vw(350);
+      height: px2vw(48);
       background-color: #ffffff;
       font-family: HelveticaNeue;
-      font-size: responsive(16);
+      font-size: px2vw(16);
+      
+      @media screen and (max-width: 992px) {
+        width: px2rem(350);
+        height: px2rem(48);
+        font-size: px2rem(16);
+      }
     }
   
     .form-btn {
-      width: responsive(60);
-      height: responsive(48);
+      width: px2vw(60);
+      height: px2vw(48);
       background-color: #ffffff;
       font-family: HelveticaNeue-Medium;
-      font-size: responsive(16);
+      font-size: px2vw(16);
+
+      @media screen and (max-width: 992px) {
+        width: px2rem(60);
+        height: px2rem(48);
+        font-size: px2rem(16);
+      }
     }
   }
 
   .footer-copyright {
-    margin-bottom: responsive(18);
+    margin-bottom: px2vw(18);
     font-family: HelveticaNeue-Light;
-    font-size: responsive(16);
+    font-size: px2vw(16);
     color: #ffffff;
+
+    @media screen and (max-width: 992px) {
+      font-size: px2rem(16);
+    }
+
+    @media screen and (max-width: 576px) {
+      margin-top: px2rem(18);
+      margin-bottom: 0;
+    }
   }
 }
