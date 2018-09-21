@@ -74,6 +74,7 @@
     .introduction-text {
       margin-top: px2vw(16);
       font-size: px2vw(16);
+      line-height: $text-line-height;
       color: $text-color;
 
       @media screen and (max-width: 992px) {

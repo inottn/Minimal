@@ -90,6 +90,7 @@
 .header .introduction .introduction-text {
   margin-top: 1.11111vw;
   font-size: 1.11111vw;
+  line-height: 1.8;
   color: #808080;
 }
 
@@ -124,6 +125,7 @@
   max-width: 41.66667vw;
   font-family: OpenSans;
   font-size: 1.11111vw;
+  line-height: 1.8;
   color: #808080;
   text-align: center;
 }
@@ -220,6 +222,7 @@
   max-width: 66.66667vw;
   font-family: OpenSans;
   font-size: 1.11111vw;
+  line-height: 1.8;
   color: #808080;
   text-align: center;
 }
@@ -267,6 +270,7 @@
   max-width: 27.5vw;
   font-family: OpenSans;
   font-size: 1.11111vw;
+  line-height: 1.8;
   color: #808080;
   text-align: center;
 }
@@ -331,7 +335,7 @@
 
 @media screen and (max-width: 576px) {
   .blog .blog-articles .blog-article .blog-article-title {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -340,6 +344,7 @@
   margin-bottom: 0;
   font-family: OpenSans;
   font-size: 1.11111vw;
+  line-height: 1.8;
   color: #808080;
 }
 
